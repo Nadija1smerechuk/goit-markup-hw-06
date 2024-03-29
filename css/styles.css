@@ -584,20 +584,16 @@ url(../images/people-office.jpg);
         .benefits-item {
             width: calc((100% - 72px) / 4);
         }
-    
+}
 
 /* <!-- Sektion-3--> */
-
-
-
 
 .section-team {
     display: flex;
     max-width: 100%;
     background-color: #F4F4FD;
-    padding-top: 120px;
-    padding-bottom: 120px;
-    
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .section-team-title {
@@ -607,16 +603,26 @@ url(../images/people-office.jpg);
     letter-spacing: 0.02em;
     text-transform: capitalize;
     text-align: center;
-    color: #2e2f42;
     margin-bottom: 72px;
 }
 
 .sections-list-title{
+    font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #2e2f42;
     text-align: center;
 margin-bottom: 8px;
 }
 
 .sections-list-text{
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        text-align: center;
     text-align: center;
     margin-bottom: 8px;
 }
@@ -639,9 +645,6 @@ margin-bottom: 8px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-            align-items: center;
-            justify-content: center;
-            flex-direction: row;
 }
 
 .team-icon{
@@ -660,10 +663,6 @@ margin-bottom: 8px;
     background-color: #404bbf;
 }
 
-.icon{
-    fill: #f4f4fd;
-}
-
 .team-icon-social{
     display: block;
     width: 40px;
@@ -674,20 +673,58 @@ margin-bottom: 8px;
     fill: #f4f4fd;
 }
 
-
-
 .team-list {
     display: flex;
-
-    flex-direction: row;
-    gap: 24px;
+    flex-direction: column;
     gap: 72px;
 }
 
 
+@media screen and (min-width: 768px){
+.container {
+    max-width: 768px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.team-list-item{
+    width: calc((100% - 24px) / 2);
+}
+.team-list{
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+gap: 64px 24px;
+}
 
 
+}
 
+@media screen and (min-width: 1158px){
+.container {
+    max-width: 1158px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.section-team {
+    display: flex;
+    max-width: 100%;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 24px;
+}
+.team-list-item {
+    width: calc((100% - 72px) / 4);
+}
+
+}
 
 /* <!-- Sektion-4--> */
 
